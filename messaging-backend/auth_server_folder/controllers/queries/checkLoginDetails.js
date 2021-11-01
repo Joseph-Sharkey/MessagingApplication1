@@ -5,10 +5,10 @@ const bcrypt = require("bcrypt");
 const authTokens = require("../authTokens");
 
 const pool = new Pool({
-	user: "joseph",
+	user: `${process.env.DBUSERNAME}`,
 	host: "localhost",
-	database: "postgres",
-	password: "Hellopeople201590",
+	database: `${process.env.DATABASE}`,
+	password: `${process.env.DBPASSWORD}`,
 	port: 5432 
 });
 

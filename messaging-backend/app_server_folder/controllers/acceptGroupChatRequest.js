@@ -2,7 +2,6 @@ const pool = require("./postgresInitialise");
 
 const acceptGroupChatRequest = (toUser, chatNumber) => {
 	return new Promise(function(resolve, reject) {
-		console.log("accepting group chat request")
 		pool.query("insert into chatparticipant(user_key, chat_key) values ($1, $2)", [toUser, chatNumber])
 		.then(response => { 
 			resolve(true)

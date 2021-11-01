@@ -12,4 +12,4 @@ function addToChat(chatNumber, userNumber) {
 	});
 };
 
-module.exports = addToChat
+module.exports = addToChat;

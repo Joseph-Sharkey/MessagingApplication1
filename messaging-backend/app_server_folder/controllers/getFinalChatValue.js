@@ -11,13 +11,5 @@ const getFinalChatValue = () => {
 		})
 	})
 }
-console.log("executing function")
-getFinalChatValue()
-.then(response => {
-	console.log("program finisehd");
-})
-.catch(err => {
-	console.log(err)
-})
 
 module.exports = getFinalChatValue;
